@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "598394783130",
+    "project_id": "grocerycalculator-95a03",
+    "storage_bucket": "grocerycalculator-95a03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598394783130:android:8079c43ee82e5f30d0a623",
+        "android_client_info": {
+          "package_name": "com.grocerycalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVlNKfUH5YJVx2mELbd1U81UDrHdGrrlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/light_black"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/native_ad"
+        layout="@layout/native_ad_layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:minHeight="0dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:backgroundTint="@color/dark_purple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/bg_edit_text"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CalculatorLabelsTv"
+                android:text="Quantity" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <ImageView
+                    android:id="@+id/decrease_quantity_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_minus" />
+
+                <EditText
+                    android:id="@+id/quantity_et"
+                    style="@style/CalculatorEt"
+                    android:layout_toStartOf="@id/increase_quantity_btn"
+                    android:layout_toEndOf="@id/decrease_quantity_btn"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/increase_quantity_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_plus" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CalculatorLabelsTv"
+                android:paddingStart="5dp"
+                android:text="Price" />
+
+            <EditText
+                android:id="@+id/price_et"
+                style="@style/CalculatorEt"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="numberDecimal"
+                tools:text="$50.50" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:paddingVertical="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_seven"
+                    style="@style/DigitButtonStyle"
+                    android:text="7" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_eight"
+                    style="@style/DigitButtonStyle"
+                    android:text="8" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_nine"
+                    style="@style/DigitButtonStyle"
+                    android:text="9" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_four"
+                    style="@style/DigitButtonStyle"
+                    android:text="4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_five"
+                    style="@style/DigitButtonStyle"
+                    android:text="5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_six"
+                    style="@style/DigitButtonStyle"
+                    android:text="6" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_one"
+                    style="@style/DigitButtonStyle"
+                    android:text="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_two"
+                    style="@style/DigitButtonStyle"
+                    android:text="2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_three"
+                    style="@style/DigitButtonStyle"
+                    android:text="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_zero"
+                    style="@style/DigitButtonStyle"
+                    android:layout_weight="2.1"
+                    android:text="0" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_dot"
+                    style="@style/DigitButtonStyle"
+                    android:text="." />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/backspace_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_bg_stroke"
+                android:padding="20dp"
+                android:src="@drawable/ic_back_space" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clear_btn"
+                style="@style/OperationBtnStyle"
+                android:text="C" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_btn"
+                style="@style/OperationBtnStyle"
+                android:layout_weight="2.1"
+                android:text="+"
+                app:backgroundTint="@color/dark_purple" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

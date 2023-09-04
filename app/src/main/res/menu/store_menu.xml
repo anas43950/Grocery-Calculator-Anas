@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/store_name_menu"
+        android:title="Store Name" />
+    <item
+        android:id="@+id/budget_menu"
+        android:title="Budget" />
+    <item
+        android:id="@+id/tax_menu"
+        android:title="Tax" />
+    <item
+        android:id="@+id/discount_menu"
+        android:title="Discount" />
+    <item
+        android:id="@+id/system_keyboard_menu"
+        android:checkable="true"
+        android:title="System Keyboard" />
+</menu>

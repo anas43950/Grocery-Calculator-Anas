@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_name_menu"
+        android:title="Edit Name" />
+    <item
+        android:id="@+id/add_quantity_menu"
+        android:title="Edit Quantity" />
+    <item
+        android:id="@+id/edit_price_menu"
+        android:title="Edit Price" />
+    <item
+        android:id="@+id/delete_item_menu"
+        android:title="Delete Item" />
+</menu>
